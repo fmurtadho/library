@@ -17,7 +17,18 @@ tidak usah buat function
 */
 
 function pattern(num){
-    return num
+    
+    var output = ''
+
+    for ( var i = 0 ; i < num ; i ++){
+
+        for ( var j = num ; j > i ; j --){
+
+            output = output + j
+        }
+        output = output + '\n'
+    }
+    return output   
 }
 
-console.log(pattern(10))
+console.log(pattern(5))
