@@ -1,0 +1,1 @@
+console.log('tapi \n kalau kaya gini kok bisa? \n aneh banget');

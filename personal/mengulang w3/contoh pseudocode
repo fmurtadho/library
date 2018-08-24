@@ -1,0 +1,73 @@
+-----------------------PSEUDOCODE WHILE LOOP------------------------------
+
+
+BEGIN
+
+   Initialize count = 0
+   WHILE number = input from user as double && number > 0  
+
+         IF (number >=10 && number >= 20)
+
+             count += 1
+
+         END IF
+
+   END WHILE
+   Display count
+END
+
+
+--------------------------------------------------------------------------
+
+--------CONTOH PSEUDOCODE STORE VALUE ------------------------------------
+Contoh Pseudocode
+
+STORE "width" with any value
+STORE "height" with any value
+STORE "area" without any value
+
+CALCULATE "width" times "height"
+SET "area" value with calculation result
+
+DISPLAY "area"
+
+
+------------CONTOH PSEUDOCODE IF SEDERHANA ---------------------------------
+IF "hungry"
+  DO "eat"
+DISPLAY "i am happy"
+
+-----------CONTOH PSEUDOCODE IF ELSE --------------------------------------
+STORE "score" to any number
+
+IF "score" < 70
+  DO "learn more"
+ELSE
+  DO "reward myself"
+DO "continue with life..."
+
+-----------CONTOH PSEUDOCODE LOOPING---------------------------------------
+STORE "full level" with 0 // mulai dari 0 
+
+WHILE "full level" < 5   // full level  < 5 
+  ADD "full level" by 1     //full level +1
+
+DISPLAY "I'm full!"         //ketika full level di tambah 1 , 1 , 1, 1, 1 menjadi 5
+                            // maka display 'i'm full' adalah hasil akhirnya
+
+
+----------CONTOH PSEUDOCODE LOOPING CONDITIONAL---------------------------
+Contoh Pseudocode
+
+STORE "count" to 1                                  //var count = 1
+
+WHILE "count" < 11                                  //for(i = 0 ; i < 11 ; i ++) { count = count + 1}
+  DISPLAY "count"
+  CALCULATE "count" mod 2                           // count mod 2
+  STORE "reminder" to the result of calculation     //var reminder = count mod 2  
+  IF "remainder" equals to 0                        // if reminder == 0
+    DISPLAY "EVEN!"                                 //console.log(even)
+  ELSE                                              // if reminder !== 0
+    DISPLAY "ODD!"                                  //console.log(odd)
+
+---------------------------------------------------------------------------
