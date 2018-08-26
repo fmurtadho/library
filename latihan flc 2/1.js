@@ -41,6 +41,8 @@ PROCEDURE getMemberSummary(member)
         RETURN output[0] with "property and property value" total_member:0,youngest_member:'belum ada data',oldest_member:'belum ada data',average_member_age:0
     ELSE
         RETURN output[0]
+    ENDIF
+ENDPROCEDURE
 */
 
 function getMemberSummary(member){

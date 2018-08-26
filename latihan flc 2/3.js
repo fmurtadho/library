@@ -47,6 +47,33 @@ output: ['dont', 'know', 'what', 'have', 'lose']
 
 */
 
+//PSEUDOCODE
+/*
+PROCEDURE averageLengthWords(words)
+    SPLIT string of words by whitespace and store the answer as `split`
+    STORE empty list `length`
+    STORE empty list `output`
+
+    FOR each split
+        STORE `current` with value split[i]
+        ADD current.length to `length`
+    ENDFOR
+
+    STORE `sum` with value 0
+    FOR each length 
+        CALCULATE sum + length and store the answer as `sum`
+    ENDFOR
+
+    STORE `avg` with value Math.round(sum/length.length)
+    FOR each `length`
+        IF `length` value is equal to `avg`
+            ADD split[l] to `output`
+        ENDIF
+    ENDFOR
+    RETURN `output`
+ENDPROCEDURE
+*/
+
 
 
 function averageLengthWord(words) {

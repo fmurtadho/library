@@ -42,11 +42,24 @@ Dilarang menggunakan built-in function:
 
 
 
-//ALGHORITMA
-
-
-
-
+//PSEUDOCODE
+/*
+PROCEDURE reverseOdd (arr)
+    STORE empty list `output`
+    FOR each `arr`
+        STORE `current` with value arr[i]
+        STORE curNum with value i + 1
+        STORE curName without any value
+        IF `curNum` modulo 2 is not equal to zero
+            STORE curName with value from PROCEDURE reverse(arr[i])
+            ADD curName to `output`
+        ELSE IF curNum modulo is equal to zero
+            ADD arr[i] to `output`
+        ENDIF
+    ENDFOR
+    RETURN `output`
+ENDPROCEDURE
+*/
 
 function reverseOdd (arr) {
 
