@@ -56,6 +56,37 @@ RULE:
 
 */
 
+//PSEUDOCODE
+/*
+PROCEDURE getUglyNumber(num)
+  STORE empty list `output`
+  FOR with i = 2 . loop will continue until i = num.
+    STORE `ugly` with value from PROCEDURE isUgly(i)
+    IF `ugly` is equal to true
+      ADD i to `output`
+    ENDIF
+  ENDFOR
+ENDPROCEDURE
+
+PROCEDURE isUgly(num)
+  WHILE `num` modulo 2 is equal to zero
+    DIVIDE `num` with 2 and store the answer as `num`
+  ENDWHILE
+  WHILE `num` modulo 3 is equal to zero
+    DIVIDE `num` with 3 and store the answer as `num`
+  ENDWHILE
+  WHILE `num` modulo 5 is equal to zero
+    DIVIDE `num` with 5 and store the answer as `num`
+  ENDWHILE
+  IF `num` is equal to 1
+    RETURN true
+  ELSE
+    RETURN false
+  ENDIF
+END PROCEDURE
+
+*/
+
 function getUglyNumber(num) {
   var output = []
 
