@@ -1,0 +1,11 @@
+function printTriangle (count) {
+    if( count <= 0 ) return "";
+
+    var p = printTriangle(count - 1);
+    p = p + "*";
+    console.log(p)
+
+    return p;
+ }
+
+ console.log(printTriangle(5))

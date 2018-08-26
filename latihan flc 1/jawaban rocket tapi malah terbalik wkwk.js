@@ -38,8 +38,9 @@ function patternR(num){
     if(num < 1){
         return ''
     }else{
+        var modifNum = num - 1
         var kata = ''
-        
+
         function random(num){
             if(num < 1){
                 return kata
@@ -49,7 +50,7 @@ function patternR(num){
         }
 
         var what = random(num)
-        return what + '\n' + patternR(num - 1)
+        return what + '\n' + patternR(modifNum)
     }
 }
 console.log(patternR(5))
