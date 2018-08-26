@@ -24,7 +24,21 @@ Asumsi:
 
 RULE:
  WAJIB MENYERTAKAN ALGORITMA/PSEUDOCODE
+*/
 
+//PSEUDOCODE
+/*
+PROCEDURE howManyGifts(maxbudget,gifts)
+  SORT gifts in descending order and store it as `gifts`
+  STORE money with value from maxBudget
+  STORE empty list `maxbudget`
+  FOR each gifts
+    IF money minus gifts[i] is greater than equal zero
+      ADD gifts[i] to `buy`
+      CALCULATE `money` minus gifts[i] and store the answer as `money`
+    ENDIF
+  ENDFOR
+ENDPROCEDURE
 */
 
 function howManyGifts(maxBudget, gifts){

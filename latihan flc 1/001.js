@@ -84,7 +84,6 @@ PROCEDURE isUgly(num)
     RETURN false
   ENDIF
 END PROCEDURE
-
 */
 
 function getUglyNumber(num) {

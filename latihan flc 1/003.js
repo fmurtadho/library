@@ -36,6 +36,25 @@ Data yang diharapkan merupakan akumulasi student yang lulus dan tidak dari setia
 Standard kelulusan adalah minimum 70.
 */
 
+//PSEUDOCODE
+/*
+PROCEDURE getReports(studentGrades)
+  STORE empty list `output`
+  FOR each studentGrades
+    STORE `current` with value studentGrades[i]
+    STORE `kelas` with value studentGrades[i].classCode
+    IF output[kelas] is equal to null
+      STORE output[kelas] with "property and property value" passed:[], failed:[]
+    ENDIF
+    IF current.score is greater than equal 70
+      ADD current.name to output.[current.classCode].passed
+    ELSE IF current.score is less than equal 70
+      ADD current.name to output.[current.classCode].failed
+    ENDIF
+  RETURN `output`
+ENDPROCEDURE
+*/
+
 function getReport(studentGrades) {
   var output = []
 
