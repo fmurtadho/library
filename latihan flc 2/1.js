@@ -34,9 +34,13 @@ PROCEDURE getMemberSummary(member)
                     STORE "output[i].oldest_member" with "property and property value" fullname:current.first_name+' '+current.last_name, age:current.age, gender:woman
                 ENDIF
             ENDFOR
+    CALCULATE Math.round(sum/(member.men.length + member.women.length)) and store the asnwer as `avg`
+    STORE `avg` in output[0].average_member_age
 
-
-
+    IF member.men.length is equal to zero AND member.women.length is equal to zero
+        RETURN output[0] with "property and property value" total_member:0,youngest_member:'belum ada data',oldest_member:'belum ada data',average_member_age:0
+    ELSE
+        RETURN output[0]
 */
 
 function getMemberSummary(member){
