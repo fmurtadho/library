@@ -12,9 +12,30 @@ PROCEDURE getMemberSummary(member)
         STORE `youngest` without any value
         STORE `sum` with value 0
         CREATE `output[i]` with "property" total_member, oldest_member, youngest_member, average_member_age and "property value" member.men.length+member.women.length , {} , {} and 0
-            FOR each of member.men.length
+            FOR each of member.men
                 STORE `current` with value member.men[i]
-                IF "current.age"
+                IF "current.age" is less than `youngest` OR `youngest` is equal to null
+                    STORE `youngest` with value from "current.age"
+                    STORE "output[i].youngest_member" with "property and property value" fullname:current.first_name+' '+current.last_name, age:current.age, gender:man
+                ENDIF
+                IF "current.age" is greater than `oldest` OR `oldest` is equal to null
+                    STORE `oldest` with value from "current.age"
+                    STORE "output[i].oldest_member" with "property and property value" fullname:current.first_name+' '+current.last_name, age:current.age, gender:man
+                ENDIF
+            ENDFOR
+            FOR each member.women
+                STORE `current` with value member.women[i]
+                IF "current.age" is less than `youngest` OR `youngest` is equal to null
+                    STORE `youngest` with value from "current.age"
+                    STORE "output[i].youngest_member" with "property and property value" fullname:current.first_name+' '+current.last_name, age:current.age, gender:woman
+                ENDIF
+                IF "current.age" is greater than `oldest` OR `oldest` is equal to null
+                    STORE `oldest` with value from `current.age`
+                    STORE "output[i].oldest_member" with "property and property value" fullname:current.first_name+' '+current.last_name, age:current.age, gender:woman
+                ENDIF
+            ENDFOR
+
+
 
 */
 
