@@ -1,0 +1,19 @@
+/* PSEUDOCODE YANG BENERNYA
+
+store 'array' with any value
+store 'countVocal' with 0 
+
+for each `character` in `array`
+   If `character` equal 'A' or
+   If `character` equal 'I' or
+   If `character equal 'U' or
+   If `character equal 'E' or
+   If `character` equal 'O'
+   ADD 'countVocal' By 1
+  End IF
+End For
+
+IF `countVocal` equal 0
+  Set `countVocal` with -1
+
+Display `countVocal`
