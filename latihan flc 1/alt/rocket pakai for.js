@@ -1,6 +1,6 @@
 /*
 Buatlah pola bilangan berikut menggunakan rekursif,
-function nya satu, parameter nya satu
+function nya satu, parameter 1
 
 54321
 5432
